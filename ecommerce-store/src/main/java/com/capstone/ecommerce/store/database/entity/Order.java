@@ -26,9 +26,9 @@ public class Order {
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;
 
-    @ToString.Exclude
-    @OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<OrderDetail> orderDetails;
+    // @ToString.Exclude
+    // @OneToMany(mappedBy = "order", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    // private List<OrderDetail> orderDetails;
 
 
     @Column(name = "customer_id", insertable = false, updatable = false)
