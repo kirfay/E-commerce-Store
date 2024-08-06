@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&family=Gupter:wght@400;500;700&family=Signika:wght@300..700&display=swap');
+
+:root {
+    --primary-color: #FFE4E1;
+    --primary-color-dark: #6495ED;
+    --text-dark: purple;
+    --text-light: #6495ED;
+    --white: #6495ed;
+    --max-width: 1200px;
+    --header-font:"Gupter", serif;
+}
+
+* {
+   padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: flex;
+    width: 100%
+}
+
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+body {
+    font-family: "Gupter", serif;
+}
+
+nav{
+    position: fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+
+.nav_header {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+}
+
+.nav_logo a {
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.nav_menu_btn {
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+}
+
+.nav_links {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1;
+    /* transform: translate(-100%); */
+}
+
+.nav_links.open {
+    transform: translateY(0);
+}
+
+.nav_links a {
+    font-weight:500;
+    color: var(--white);
+}
+
+.nav_links a:hover{
+    color: var(--text-dark);
+}
+
+.nav_btns {
+    display: none;
+}
+
+
+
+.h1 {
+    margin-top: 50px; /* Adjust this value as needed */
+}
