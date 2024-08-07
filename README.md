@@ -1,2 +1,2 @@
 # E-commerce-Store
-E-commerce store for the RT62 class
+Created an E-commerce store that provides Amazon Seller Sevices such as SEO Optimized Product Listing Copywriting, Product Research and Sourcing, Amazon Seller Central Account Management. 
