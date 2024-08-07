@@ -16,10 +16,20 @@ public class ProductService {
     private ProductDAO productDAO;
 
     public Product createProduct(CreateProductFormBean form) {
-    Product product = productDAO.findById(form.getProductId());
-    if (product == null) {
-        product = new Product();
+        Product product = productDAO.findById(form.getProductId());
+        if (product == null) {
+            product = new Product();
+        }
+
+        product.setProductCode(form.getProductCode());
+        product.setProductName(form.getProductName());
+        product.setProductDescription(form.getProductDescription());
+        product.setBuyPrice(form.getBuyPrice());
+        product = productDAO.save(product);
+
+        return product;
     }
+}
 
 
 

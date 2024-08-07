@@ -3,7 +3,7 @@
 
 
 <div class="container">
-    <h1 class="text-center my-4"> This is our capstone project </h1>
+    <h1 class="text-center my-4"> This is our E-commerce Store </h1>
 </div>
 
 

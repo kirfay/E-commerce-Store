@@ -1,6 +1,7 @@
 package com.capstone.ecommerce.store.controller;
 
 import com.capstone.ecommerce.store.database.dao.ProductDAO;
+import com.capstone.ecommerce.store.database.entity.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.*;

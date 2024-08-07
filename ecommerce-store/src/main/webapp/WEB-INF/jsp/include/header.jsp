@@ -17,7 +17,7 @@
     <a href="/">Home</a>
     <a href="/product">Services</a>
     <a href="/product/create">Service Details</a>
+    <a href="/check-out" class="split">Check out</a>
     <a href="/sign-in" class="split">Sign In</a>
     <a href="/create-account" class="split">Create Account</a>
-    <a href="/check-out" class="split">Check out</a>
 </div>
