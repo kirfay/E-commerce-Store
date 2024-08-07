@@ -23,4 +23,12 @@ public class IndexController {
         return response;
     }
 
+    @GetMapping("/product")
+    public ModelAndView canBeAnyFunctionNameYouWant() {
+        // this page is for another page of the website which is express as "/product"
+        ModelAndView response = new ModelAndView("product");
+
+        return response;
+    }
+
 }
