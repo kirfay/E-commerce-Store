@@ -17,9 +17,6 @@ public class Product {
     @Column(name = "id")
     private Integer id;
 
-    @Column(name = "product_code")
-    private String productCode;
-
     @Column(name = "product_name")
     private String productName;
 
@@ -28,4 +25,7 @@ public class Product {
 
     @Column(name = "buy_price", columnDefinition = "DECIMAL")
     private Double buyPrice;
+
+    @Column(name = "product_image_url")
+    private String productImageUrl;
 }

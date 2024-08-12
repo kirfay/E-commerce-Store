@@ -1,10 +1,8 @@
 package com.capstone.ecommerce.store.controller;
 
 import com.capstone.ecommerce.store.database.dao.ProductDAO;
-import com.capstone.ecommerce.store.database.entity.Product;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.*;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -20,14 +18,14 @@ public class IndexController {
 
     @GetMapping("/")
     public ModelAndView index(@RequestParam(required = false) Integer id) {
-        ModelAndView response = new ModelAndView("index");
+        ModelAndView response = new ModelAndView("Home/index");
         return response;
     }
 
     @GetMapping("/product")
     public ModelAndView canBeAnyFunctionNameYouWant() {
         // this page is for another page of the website which is express as "/product"
-        ModelAndView response = new ModelAndView("product");
+        ModelAndView response = new ModelAndView("product/detail");
 
         return response;
     }

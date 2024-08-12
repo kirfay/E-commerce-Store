@@ -21,7 +21,6 @@ public class ProductService {
             product = new Product();
         }
 
-        product.setProductCode(form.getProductCode());
         product.setProductName(form.getProductName());
         product.setProductDescription(form.getProductDescription());
         product.setBuyPrice(form.getBuyPrice());

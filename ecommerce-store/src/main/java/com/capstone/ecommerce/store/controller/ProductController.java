@@ -2,34 +2,46 @@ package com.capstone.ecommerce.store.controller;
 
 import com.capstone.ecommerce.store.database.dao.ProductDAO;
 import com.capstone.ecommerce.store.database.entity.Product;
-import com.capstone.ecommerce.store.form.CreateProductFormBean;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
 
+@Slf4j
 @Controller
-@RequestMapping("/products")
+@RequestMapping("/product")
 public class ProductController {
 
     @Autowired
     private ProductDAO productDAO;
 
-    @GetMapping ({"", "/"})
-    public String showProductList(Model model) {
-        List<Product> products = productDAO.findAll(Sort.by(Sort.Direction.DESC,"id"));
-        model.addAttribute("products", products);
-        return "products/index";
+
+    @GetMapping("/")
+    public ModelAndView product() {
+        ModelAndView response = new ModelAndView("product/detail");
+        List<Product> products = productDAO.findAll();
+        return response;
     }
 
-    @GetMapping("/create")
-    public String showCreatePage(Model model) {
-        CreateProductFormBean productFormBean = new CreateProductFormBean();
-        model.addAttribute("productFormBean", productFormBean);
-        return "products/createProduct";
-    }
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+

@@ -16,8 +16,20 @@
 <div class="topnav">
     <a href="/">Home</a>
     <a href="/product">Services</a>
-    <a href="/product/create">Service Details</a>
+
+    <li class="nav-item">
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="admin-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Admin
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a href="/admin/productlist" class="dropdown-item">Products</a>
+                <a href="/admin/createproduct" class="dropdown-item">Create Products</a>
+                <a href="/admin/orderlist" class="dropdown-item">Change Orders</a>
+            </div>
+        </div>
+    </li>
     <a href="/check-out" class="split">Check out</a>
-    <a href="/sign-in" class="split">Sign In</a>
-    <a href="/create-account" class="split">Create Account</a>
+    <a href="/log-in" class="split">Log In</a>
+    <a href="/sign-up" class="split">Sign Up</a>
 </div>
